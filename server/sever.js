@@ -19,9 +19,9 @@ app.use('/api/users',userRoute)
 app.use('/api/orders',orderRoute)
 
 
-app.get('/',(req,res)=>{
-    res.send('this is from backend')
-});
+// app.get('/',(req,res)=>{
+//     res.send('this is from backend')
+// });
 
 if(process.env.NODE_ENV == 'production'){
     app.use(express.static("client/build"));
